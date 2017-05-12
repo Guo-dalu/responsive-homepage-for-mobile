@@ -38,7 +38,7 @@ header{
 	display: flex;
 	justify-content:center;
 	align-items:center;
-	background: url(homePage_images/礼物_u186.png) no-repeat;
+	background: url(礼物_u186.png) no-repeat;
 	background-size:7% 70%;
 	background-position:95% 50%;
 	border-bottom:1px solid darkgrey;
@@ -78,7 +78,7 @@ header{
 .banner::after{
 	content: " ";
 	opacity: 0.2;
-	background: url(homePage_images/u145.png) no-repeat;
+	background: url(u145.png) no-repeat;
 	background-size: 100% 100%;
 	position: absolute ;
 	top: 0;
@@ -128,7 +128,7 @@ header{
 }
 .topic{
 	height: 43%;
-	background: url(homePage_images/u174.png) no-repeat;
+	background: url(u174.png) no-repeat;
 	background-size: 20% 58%;
 	background-position: 10% 50%;
 	display: -webkit-flex;
@@ -160,7 +160,7 @@ header{
 .topicView{
 	width: 3em;
 	height: 1em;
-	background: url(homePage_images/u285.png) no-repeat;
+	background: url(u285.png) no-repeat;
 	background-size: 1em;
 	background-position: 0;
 	text-align: right;
@@ -200,7 +200,7 @@ header{
 	width: 25%;
 	text-align: center;
 	height: 1.5em;
-	background: url(homePage_images/换一换icon_u168.png) no-repeat;
+	background: url(换一换icon_u168.png) no-repeat;
 	background-size: 1.5em 1.5em;
 	background-position: -0.3em 0;
 }
@@ -301,7 +301,7 @@ footer{
 #companyIntro::after{
 	content: " ";
 	opacity: 0.3;
-	background: url(homePage_images/u145.png) no-repeat;
+	background: url(u145.png) no-repeat;
 	background-size: 100% 100%;
 	position: absolute ;
 	top: 0;
@@ -347,14 +347,14 @@ footer{
 	  transform:translateX(-50%);
 }
 .link:nth-child(1)::after{
-	background-image: url(homePage_images/u135.png);
+	background-image: url(u135.png);
 }
 .link:nth-child(2)::after{
-	background-image: url(homePage_images/u137.png);
+	background-image: url(u137.png);
 }
 .link:nth-child(3)::after{
-	background-image: url(homePage_images/u139.png);
+	background-image: url(u139.png);
 }
 .link:nth-child(4)::after{
-	background-image: url(homePage_images/u141.png);
+	background-image: url(u141.png);
 }
