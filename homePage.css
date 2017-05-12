@@ -1,0 +1,360 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+  height: 150%;
+  width: 100%;
+  position: absolute;
+  font-size: 22px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-family: '华文细黑 Regular', '华文细黑';
+  overflow: scroll;
+}
+@media
+body{
+	(-webkit-min-device-pixel-ratio:1.5),(min-resolution:2dpppx){
+		body{
+			-webkit-font-smoothing:subpixel-antialiased;
+		}
+	}
+}
+
+header,section,footer{
+	width: 100%;
+	overflow: hidden;
+}
+
+header{
+	height: 21%;
+}
+.advertise,.announce,.banner{
+	width: 100%;
+}
+.advertise{
+	height: 20%;
+	display: -webkit-flex;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background: url(homePage_images/礼物_u186.png) no-repeat;
+	background-size:7% 70%;
+	background-position:95% 50%;
+	border-bottom:1px solid darkgrey;
+}
+.text{
+	font-size: 2rem;
+}
+.advertise p.text{
+	font-size: 1.82em;
+	line-height: 1.82em;
+}
+
+.announce{
+	height: 30%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	border-bottom:1px solid darkgrey;
+}
+.onelinelimit{
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	height: 1em;
+	width: 80%;
+	padding-left: 1em;
+	overflow: hidden;
+}
+
+.banner{
+	height: 50%;
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	justify-content:center;
+	align-items:flex-end;
+}
+.banner::after{
+	content: " ";
+	opacity: 0.2;
+	background: url(homePage_images/u145.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute ;
+	top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;  
+}
+.bannertext{
+	position: relative;
+} 
+.banner>p{
+	font-size: 1.8em;
+	font-weight: 700;
+	height: 60%;
+}
+.bannercontainer{
+	height: 70%;
+	width: 66%;
+	overflow: visible;
+	display: -webkit-flex;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	font-size: 1.79rem;
+}
+.bannercontainer .bannertext{
+	width: 16em;
+	text-align: center;
+}
+#columnIntro{
+	background-color: #169bd5;
+	color: white;
+	width: 7em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	font-weight: 900;
+	border-radius: 0.5em;
+}
+/*articles section begin*/
+#articles{
+	height: 26%;
+}
+.topic,#seeMore{
+	width: 100%;
+}
+.topic{
+	height: 43%;
+	background: url(homePage_images/u174.png) no-repeat;
+	background-size: 20% 58%;
+	background-position: 10% 50%;
+	display: -webkit-flex;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	position: relative;
+	border-bottom:1px solid darkgrey;
+}
+
+.topicInfo{
+	position: absolute;
+	left: 35%;
+	width: 60%;
+	height: 58%;
+	display: -webkit-flex;
+	display: flex;
+	justify-content:space-around;
+	flex-direction:column;
+
+}
+
+.topicAbstract{
+	display: -webkit-flex;
+	display: flex;
+	justify-content:space-between;
+	line-height: 1em;
+}
+.topicView{
+	width: 3em;
+	height: 1em;
+	background: url(homePage_images/u285.png) no-repeat;
+	background-size: 1em;
+	background-position: 0;
+	text-align: right;
+}
+#seeMore{
+	height: 14%;
+	display: -webkit-flex;
+	display: flex;
+	align-items:center;
+	border-bottom:1px solid darkgrey;
+	
+}
+#seeMore .text{
+	width: 100%;
+	text-align: center;
+}
+/*products secion begin*/
+#products{
+	height: 26%;
+}
+#hotSale,#showProducts{
+	width: 100%;
+}
+#hotSale{
+	height: 20%;
+	background-color: #fcfcfc;
+	display: -webkit-flex;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+}
+#hotSale .text:first-of-type{
+	width: 25%;
+	text-align: right;
+}
+#hotSale .text:last-of-type{
+	width: 25%;
+	text-align: center;
+	height: 1.5em;
+	background: url(homePage_images/换一换icon_u168.png) no-repeat;
+	background-size: 1.5em 1.5em;
+	background-position: -0.3em 0;
+}
+
+
+#showProducts{
+	height: 80%;
+}
+.prorow{
+height: 50%;
+width: 100%;
+display: -webkit-flex;
+display: flex;
+}
+.product{
+	box-sizing:border-box;
+	width: 50%;
+	height: 100%;
+	border: 1px solid rgba(133,133,133,0.7);
+	display: -webkit-flex;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.prodata,.proinfo{
+	width: 40%;
+	height: 53%;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction:column;
+	align-items:space-between;
+	justify-content:space-around;
+	text-align: center;
+}
+.proinfo{
+	height: 60%;
+	box-sizing:border-box;
+	padding: 1em;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+.data{
+	font-size: 3rem;
+}
+
+.data+.text{
+	font-size: 1.8rem;
+
+}
+.protype{
+	font-size: 2rem;
+	font-weight: 200;
+}
+.proad{
+	border: 1px solid #777;
+	border-radius: 0.5em;
+	padding:0.2em 0.4em; 
+	height: 1.3em;
+	line-height: 1.3em;
+}
+footer{
+	height: 27%;
+}
+#copyRight,#companyIntro,#links{
+	width: 100%;
+}
+#copyRight{
+	height: 25%;
+	background-color: #fcfcfc;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+
+}
+.copyinfo{
+	text-align: center;
+	margin: 0.2em;
+}
+#companyIntro{
+	height: 42%;
+	display: flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:center;
+	position: relative;
+
+}
+#companyIntro .text{
+	width: 40%;
+	padding:0 5em;
+}
+#companyIntro .text:last-of-type{
+	padding:0 2em;
+	align-self:flex-end;
+}
+#companyIntro::after{
+	content: " ";
+	opacity: 0.3;
+	background: url(homePage_images/u145.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute ;
+	top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;  
+}
+#links{
+	height: 33%;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.link{
+	width: 25%;
+	height: 100%;
+	box-sizing:border-box;
+	position: relative;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.link .text{
+	font-size: 1.8rem;
+	text-align: center;
+	padding-top: 37%;
+	padding-bottom: 0.4em;
+	letter-spacing: 0.2em;
+	
+}
+.link::after{
+	content: " ";
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: -1;
+	position: absolute;
+	width: 4em;
+	  top: 18%;
+	  left: 50%;
+	  right: 0;
+	  bottom: 0;
+	  transform:translateX(-50%);
+}
+.link:nth-child(1)::after{
+	background-image: url(homePage_images/u135.png);
+}
+.link:nth-child(2)::after{
+	background-image: url(homePage_images/u137.png);
+}
+.link:nth-child(3)::after{
+	background-image: url(homePage_images/u139.png);
+}
+.link:nth-child(4)::after{
+	background-image: url(homePage_images/u141.png);
+}
